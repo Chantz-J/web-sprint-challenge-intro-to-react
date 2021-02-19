@@ -40,7 +40,7 @@ const App = () => {
       {
         characters.map(chara => {
           return (
-            <Character info={chara} />
+            <Character key={chara.url} info={chara} />
           )
         })
       }
