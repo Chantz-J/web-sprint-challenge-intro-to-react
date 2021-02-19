@@ -24,7 +24,7 @@ export default function Character (props) {
         <CharacterSection>
             <h1>{info.name}</h1>
             <button onClick={toggleVisible}>View Details</button>
-            <InfoCard info={info} visible={display} />
+            <InfoCard info={info} toggle={display} />
         </CharacterSection>
     )
 }

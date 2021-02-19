@@ -9,9 +9,9 @@ const InfoSection = styled.div`
 `
 
 export default function InfoCard (props) {
-    const {info, visible} = props
+    const {info, toggle} = props
     return (
-        <InfoSection style={{display: visible}}>
+        <InfoSection style={{display: toggle}}>
             <p>Birth Year: {info.birth_year}</p>
             <p>Gender: {info.gender === 'n/a' ? `Not specified` : info.gender}</p>
             <p>Height: {info.height}</p>
